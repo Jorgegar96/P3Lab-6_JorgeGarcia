@@ -15,7 +15,10 @@
 using namespace std;
 
 int main(){
-	Escenario* e = new Invisible("s");
+	cout<<"Ingrese el nombre del tablero";
+	string nombre;
+	cin>>nombre;
+	Escenario* e = new Invisible(nombre);
 	dynamic_cast<Invisible*>(e)->imprimirMapa();
 	return 0;
 }
