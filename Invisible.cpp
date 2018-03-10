@@ -37,7 +37,8 @@ void Invisible:: imprimirMapa(){
 		
 	for(int x=0; x<11; x++){
 		for(int y=0; y<13; y++){
-			cout<<this->getMapa()[x][y];
+			cout<<this->getMapa()[x][y]->getLetra();
 		}
+		cout<<endl;
 	}
 }
